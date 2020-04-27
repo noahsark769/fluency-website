@@ -1,12 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
+import { FaTwitter } from "react-icons/fa";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const Nav = () => (
+    <div className="flex flex-row-reverse p-6">
+        <a className="hover:bg-gray-200 p-2 rounded-sm" href="https://twitter.com/getfluencyapp"><FaTwitter color={"#29c2e8"} size="24" /></a>
+    </div>
+)
 
 const IndexPage = () => (
-  <p className="bg-red-500">Fluency</p>
+    <div className="outerWrapper flex flex-col" style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
+        <Nav />
+        <div className="innerWrapper p-32">
+            <div>Fluency</div>
+            <h1 className="font-black">Pro macOS app for Confluence Server</h1>
+        </div>
+    </div>
 )
 
 export default IndexPage
