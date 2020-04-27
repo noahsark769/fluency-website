@@ -1,18 +1,20 @@
 import React from "react"
-import { FaTwitter } from "react-icons/fa";
-
-const Nav = () => (
-    <div className="flex flex-row-reverse p-6">
-        <a className="hover:bg-gray-200 p-2 rounded-sm" href="https://twitter.com/getfluencyapp"><FaTwitter color={"#29c2e8"} size="24" /></a>
-    </div>
-)
+import { Nav } from "../components/Nav"
+import { A } from "../components/A"
 
 const IndexPage = () => (
     <div className="outerWrapper flex flex-col" style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
         <Nav />
         <div className="innerWrapper p-32">
-            <div>Fluency</div>
-            <h1 className="font-black">Pro macOS app for Confluence Server</h1>
+            <div className="text-2xl pb-2">Fluency</div>
+            <h1 className="font-black text-5xl pb-5">Pro macOS app for Confluence Server</h1>
+            <ul className="text-lg pl-8 pb-8" style={{listStyleType: "disc"}}>
+                <li className="p-1">Fast, local search for only the spaces you need</li>
+                <li className="p-1">Create and publish pages with real Markdown</li>
+                <li className="p-1">View local pages without signing in</li>
+                <li className="p-1">Copy links to headings in one click</li>
+            </ul>
+            <button disabled className="p-4 bg-blue-300 text-white rounded-md">Waitlist signup coming soon</button>
         </div>
     </div>
 )
