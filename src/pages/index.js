@@ -6,7 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <p>Fluency</p>
+  <p className="bg-red-500">Fluency</p>
 )
 
 export default IndexPage
