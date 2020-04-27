@@ -3,6 +3,7 @@ module.exports = {
     title: `Fluency: Pro macOS app for Confluence Server`,
     description: ``,
     author: `@getfluencyapp`,
+    siteUrl: `https://getfluency.io`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
