@@ -5,7 +5,7 @@ import Image from "../components/Image"
 const IndexPage = () => (
     <div className="outerWrapper flex flex-col" style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
         <Nav />
-        <div className="innerWrapper p-32">
+        <div className="innerWrapper p-8 md:p-32">
             <div className="flex flex-row items-center justify-start pb-4"> 
                 <div style={{width: "40px", height: "40px"}}><Image filename="logo.png" /></div>
                 <div className="text-2xl pl-4">Fluency</div>
