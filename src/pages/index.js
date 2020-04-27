@@ -1,12 +1,15 @@
 import React from "react"
 import { Nav } from "../components/Nav"
-import { A } from "../components/A"
+import Image from "../components/Image"
 
 const IndexPage = () => (
     <div className="outerWrapper flex flex-col" style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
         <Nav />
         <div className="innerWrapper p-32">
-            <div className="text-2xl pb-2">Fluency</div>
+            <div className="flex flex-row items-center justify-start pb-4"> 
+                <div style={{width: "40px", height: "40px"}}><Image filename="logo.png" /></div>
+                <div className="text-2xl pl-4">Fluency</div>
+            </div>
             <h1 className="font-black text-5xl pb-5">Pro macOS app for Confluence Server</h1>
             <ul className="text-lg pl-8 pb-8" style={{listStyleType: "disc"}}>
                 <li className="p-1">Fast, local search for only the spaces you need</li>
