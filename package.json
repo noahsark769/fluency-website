@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Noah Gilmore (@noahsark769)",
   "dependencies": {
+    "@statickit/react": "^2.1.1",
     "gatsby": "^2.20.35",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-force-trailing-slashes": "^1.0.4",

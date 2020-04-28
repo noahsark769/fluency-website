@@ -1,0 +1,15 @@
+{
+    "forms": {
+        "contactForm": {
+            "name": "Fluency Beta Sign-up Form",
+            "actions": [
+                { "type": "email", "to": "beta@getfluency.io" }
+            ],
+            "fields": {
+                "email": { "type": "email", "required": true },
+                "message": { "type": "text", "required": false }
+            },
+            "allowExtraFields": false
+        }
+    }
+}
