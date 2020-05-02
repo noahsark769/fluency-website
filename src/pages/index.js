@@ -5,8 +5,7 @@ import { StaticKitProvider } from '@statickit/react'
 import { useForm, ValidationError } from '@statickit/react';
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("contactForm");
-  console.log(state);   
+  const [state, handleSubmit] = useForm("contactForm");  
   if (state.succeeded) {
     return <p>Thanks for signing up! We'll contact you when a beta is available <span role="img" aria-label="Smiley face">🙂</span></p>;
   }
@@ -72,7 +71,6 @@ const IndexPage = () => (
                     <li className="p-1">View local pages without signing in</li>
                     <li className="p-1">Copy links to headings in one click</li>
                 </ul>
-                {/* <button disabled className="p-4 bg-blue-300 text-white rounded-md">Waitlist signup coming soon</button> */}
                 <ContactForm />
             </div>
         </div>
