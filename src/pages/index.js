@@ -12,7 +12,7 @@ function ContactForm() {
   return (
     <form className="flex flex-col max-w-xl" onSubmit={handleSubmit}>
         <div className="flex flex-col pb-8">
-            <label htmlFor="email" className="pb-3 text-gray-700">
+            <label htmlFor="email" className="pb-3 text-gray-700 dark-mode:text-white">
                 Email Address
             </label>
             { state.errors.filter((error) => { return error.field === "email" }).length ?
@@ -24,14 +24,14 @@ function ContactForm() {
                 />
             </div> : null }
             <input
-                className="bg-gray-200 h-12 rounded-md text-2xl p-4 text-gray-800"
+                className="bg-gray-200 h-12 rounded-md text-2xl p-4 text-gray-800 dark-mode:text-whites"
                 id="email"
                 type="email" 
                 name="email"
             />
         </div>
         <div className="flex flex-col pb-8">
-            <label htmlFor="message" className="pb-3 text-gray-700">
+            <label htmlFor="message" className="pb-3 text-gray-700 dark-mode:text-white">
                 (Optional) Tell us what you'd like to use Fluency for
             </label>
             { state.errors.filter((error) => { return error.field === "message" }).length ?
@@ -43,7 +43,7 @@ function ContactForm() {
                 />
             </div> : null }
             <textarea
-                className="bg-gray-200 h-24 rounded-md text-xl leading-normal p-4 text-gray-800"
+                className="bg-gray-200 h-24 rounded-md text-xl leading-normal p-4 text-gray-800 dark-mode:text-white"
                 id="message"
                 name="message"
             />
@@ -57,7 +57,7 @@ function ContactForm() {
 
 const IndexPage = () => (
     <StaticKitProvider site="701e580f4480">
-        <div className="outerWrapper flex flex-col" style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
+        <div className="outerWrapper h-screen flex flex-col dark-mode:bg-gray-800 dark-mode:text-white" style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
             <Nav />
             <div className="innerWrapper p-8 md:p-32 md:pt-8">
                 <div className="flex flex-row items-center justify-start pb-4"> 
