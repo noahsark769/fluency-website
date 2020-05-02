@@ -57,7 +57,8 @@ function ContactForm() {
 
 const IndexPage = () => (
     <StaticKitProvider site="701e580f4480">
-        <div className="outerWrapper h-screen flex flex-col dark-mode:bg-gray-800 dark-mode:text-white" style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
+        <div className="outerWrapper h-screen flex flex-col dark-mode:bg-gray-800 dark-mode:text-white"
+            style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
             <Nav />
             <div className="innerWrapper p-8 md:p-32 md:pt-8">
                 <div className="flex flex-row items-center justify-start pb-4"> 

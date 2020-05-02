@@ -16,7 +16,7 @@ export default class HTML extends React.Component {
           <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet" />
           {this.props.headComponents}
         </head>
-        <body {...this.props.bodyAttributes}>
+        <body {...this.props.bodyAttributes} className="dark-mode:bg-gray-800">
           {this.props.preBodyComponents}
           <div
             key={`body`}
