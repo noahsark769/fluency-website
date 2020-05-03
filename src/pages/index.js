@@ -4,6 +4,7 @@ import Image from "../components/Image"
 import { StaticKitProvider } from '@statickit/react'
 import { useForm, ValidationError } from '@statickit/react';
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("contactForm");  
@@ -64,6 +65,9 @@ const InnerContainer = styled.div`
 
 const IndexPage = () => (
     <StaticKitProvider site="701e580f4480">
+        <Helmet>
+            <title>Fluency: Pro macOS app for Confluence Server</title>
+        </Helmet>
         <div className="outerWrapper h-screen flex flex-col dark-mode:bg-gray-800 dark-mode:text-white"
             style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
             <Nav />
