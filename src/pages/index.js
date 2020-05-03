@@ -26,7 +26,7 @@ function ContactForm() {
                 />
             </div> : null }
             <input
-                className="bg-gray-200 h-12 rounded-md text-2xl p-4 text-gray-800 dark-mode:text-whites"
+                className="bg-gray-200 h-12 rounded-md text-2xl p-4 text-gray-800"
                 id="email"
                 type="email" 
                 name="email"
@@ -45,7 +45,7 @@ function ContactForm() {
                 />
             </div> : null }
             <textarea
-                className="bg-gray-200 h-24 rounded-md text-xl leading-normal p-4 text-gray-800 dark-mode:text-white"
+                className="bg-gray-200 h-24 rounded-md text-xl leading-normal p-4 text-gray-800"
                 id="message"
                 name="message"
             />
