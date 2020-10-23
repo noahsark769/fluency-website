@@ -10,7 +10,14 @@ import ReactGA from "react-ga";
 function ContactForm() {
   const [state, handleSubmit] = useForm("contactForm");  
   if (state.succeeded) {
-    return <p>Thanks for signing up! We'll contact you when a beta is available <span role="img" aria-label="Smiley face">🙂</span></p>;
+      return <div>
+          <p className="pb-8">Thank you! Click the button below to start download.</p>
+        <button onClick={ () => {
+            window.location.href = "https://github.com/noahsark769/fluency-appcasts/releases/download/0.0.20/Fluency.0.0.20.dmg";
+        }} disabled={state.submitting} className="p-4 bg-blue-500 text-white rounded-md">
+            Download
+        </button>
+      </div>
   }
   return (
     <form className="flex flex-col max-w-xl" onSubmit={handleSubmit}>
@@ -52,7 +59,7 @@ function ContactForm() {
             />
         </div>
         <button type="submit" disabled={state.submitting} className="p-4 bg-blue-500 text-white rounded-md">
-            Join Beta Waitlist
+            Download
         </button>
     </form>
   );
@@ -73,7 +80,7 @@ class IndexPage extends React.Component {
     render() {
         return (<StaticKitProvider site="701e580f4480">
             <Helmet>
-                <title>Fluency: Pro macOS app for Confluence Server</title>
+                <title>Fluency: macOS Confluence Editor</title>
             </Helmet>
             <div className="outerWrapper h-screen flex flex-col dark-mode:bg-gray-800 dark-mode:text-white"
                 style={{fontFamily: "'Lato', Helvetica, sans-serif"}}>
@@ -85,8 +92,9 @@ class IndexPage extends React.Component {
                                 <div style={{width: "40px", height: "40px"}}><Image filename="logo.png" /></div>
                                 <div className="text-2xl pl-4">Fluency</div>
                             </div>
-                            <h1 className="font-black text-5xl pb-5">Pro macOS app for Confluence Server</h1>
+                            <h1 className="font-black text-5xl pb-5">macOS Confluence Editor</h1>
                             <ul className="text-lg pl-8 pb-8" style={{listStyleType: "disc"}}>
+                                <li className="p-1">Works with self-hosted Confluence Server</li>
                                 <li className="p-1">Fast, local search for only the spaces you need</li>
                                 <li className="p-1">Create and publish pages with real Markdown</li>
                                 <li className="p-1">View local pages without signing in</li>
