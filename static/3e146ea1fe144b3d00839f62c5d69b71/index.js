@@ -100,7 +100,11 @@ class IndexPage extends React.Component {
                                 <li className="p-1">View local pages without signing in</li>
                                 <li className="p-1">Copy links to headings in one click</li>
                             </ul>
-                            <ContactForm />
+                            <button onClick={ () => {
+                                window.location.href = "https://github.com/noahsark769/fluency-appcasts/releases/download/0.1.0/Fluency.0.1.0.dmg";
+                            }} className="p-4 bg-blue-500 text-white rounded-md">
+                                Download Fluency Beta for macOS
+                            </button>
                         </div>
                         <div className="block md:hidden pt-8" style={{maxWidth: "100%", overflow: "hidden"}}>
                             <div style={{position: "relative", width: "170%", overflow: "hidden"}}>
