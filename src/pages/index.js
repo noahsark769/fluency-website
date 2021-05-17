@@ -101,7 +101,7 @@ class IndexPage extends React.Component {
                                 <li className="p-1">Copy links to headings in one click</li>
                             </ul>
                             <button onClick={ () => {
-                                window.location.href = "https://github.com/noahsark769/fluency-appcasts/releases/download/0.1.0/Fluency.0.1.0.dmg";
+                                window.location.href = "https://github.com/noahsark769/fluency-appcasts/releases/download/0.2.2/Fluency.0.2.2.dmg";
                             }} className="p-4 bg-blue-500 text-white rounded-md">
                                 Download Fluency Beta for macOS
                             </button>
